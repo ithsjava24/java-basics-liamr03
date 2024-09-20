@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
@@ -82,7 +83,7 @@ public class App {
 
         System.out.print("Lägsta pris: " + String.format("%02d-%02d", minHour, (minHour + 1) % 24) + ", " + min + " öre/kWh\n");
         System.out.print("Högsta pris: " + String.format("%02d-%02d", maxHour, (maxHour + 1) % 24) + ", " + max + " öre/kWh\n" );
-        System.out.print("Medelpris: " + String.format("%.2f", average) + " öre/kWh\n");
+        System.out.print("Medelpris: " + String.format(Locale.forLanguageTag("sv-SE"),"%.2f", average) + " öre/kWh\n");
     }
 
     public static void sortPrices(int[] prices) {
