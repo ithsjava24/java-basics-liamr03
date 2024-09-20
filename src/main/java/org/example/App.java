@@ -124,7 +124,7 @@ public class App {
         double average = minSum / 4.0;
 
         System.out.print("Påbörja laddning klockan " + String.format("%02d", bestStart) + "\n");
-        System.out.println("Medelpris 4h: " + String.format("%.1f", average) + " öre/kWh" + "\n");
+        System.out.println("Medelpris 4h: " + String.format(Locale.forLanguageTag("sv-SE"),"%.1f", average) + " öre/kWh" + "\n");
     }
 
     public static void Visualisering(int[] prices){
